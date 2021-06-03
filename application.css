@@ -1,0 +1,217 @@
+/* OGÓLNE */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px !important;
+  color: #5c5b5b !important;
+  font-family: 'Nunito', sans-serif !important;
+  background: #f5f5f5 !important;
+}
+
+h1 {
+  font-size: 3rem !important;
+  font-weight: 800 !important;
+}
+
+.font-bold {
+  font-weight: 800 !important;
+}
+
+.font-no-bold {
+  font-weight: normal !important;
+}
+
+.bg-dark-gray {
+  background: #6a7b8b;
+}
+
+.main-content-section {
+  margin-right: 5.5% !important;
+  margin-left: 5.5% !important;
+}
+
+/* NAVBAR */
+
+.navbar{
+  padding: 0 !important;
+}
+
+.icon-mrcoffee-navbar {
+  height: 4rem;
+}
+
+.navbar-nav a {
+  font-family: 'Archivo', sans-serif;
+  letter-spacing: 1px;
+  color: #f1f3f5 !important;
+  padding-right: 2rem !important;
+}
+
+.pasek-nawigacyjny{
+  padding: 0.5rem 3rem !important;
+}
+
+/* HEADER */
+
+header {
+  padding-top: 6rem;
+}
+
+.logo-header {
+  width: 20%;
+}
+
+/* FOOTER */
+
+.pasek-dolny {
+  height: 10rem;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.icon-mrcoffee-footer {
+  height: 6rem;
+  padding-left: 2rem;
+}
+
+.flex-social-media-links {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.flex-social-media-links img {
+  width: 4rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.mar-x-footer {
+  margin-left: 20%;
+}
+
+/* HOMEPAGE */
+
+.main-content-section h1{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/*PHOTO CAFE PHILO*/
+
+.card-img-overlay {
+  display: flex !important;
+  justify-content: center;
+}
+
+.card-title {
+  font-size: 3.5rem !important;
+  font-weight: bold !important;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 5%;
+}
+
+/*TROIS CHOSES*/
+
+.trois-choses-columns div {
+  padding: 2%;
+  width: 31%;
+  background-color: #bbc2ca;
+  color: white;
+}
+
+.trois-choses-columns h2, .trois-choses p, .trois-choses img {
+  padding: 2%;
+}
+
+.trois-choses h2 {
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+}
+
+.trois-choses p {
+  font-weight: bold;
+}
+
+.logo-trois-choses {
+  width: 30% !important;
+}
+
+/*BUTTON*/
+
+.en-savoir-plus button {
+  width: 100%;
+  height: 5rem;
+  margin-top: 4rem;
+  background-color:#6a7b8b;
+}
+
+/*PROGRAMME*/
+
+.notre-programme {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.notre-programme-info .row {
+  margin-bottom: 6rem;
+}
+
+.icon-open {
+  width: 6rem !important;
+}
+
+.row-open {
+  margin-right: 60% !important;
+}
+
+.pad-x-6 {
+  padding-left: 6% !important;
+  padding-right: 6% !important;
+}
+
+/* ABOUT PAGE */
+
+.about-text-1 *, .about-text-2 h2 {
+  padding-top: 3rem;
+}
+
+.about-part-1, .about-part-2 {
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+}
+
+/* CONTACT PAGE*/
+
+.mapka {
+  width: 100%;
+  padding: 5% 15%;
+}
+
+.dane-kontaktowe {
+  margin-left: 15%;
+}
+
+.dane-kontaktowe h3 {
+  padding-top: 3rem !important;
+}
+
+/* MEDIA Q */
+
+@media all and (max-width: 991px) {
+  .icon-open-row { flex-flow: column wrap; }
+  .icon-open { width: 7rem; }
+  .icon-open { padding: 1rem; }
+}
+
+@media all and (max-width: 767px) {
+  .about-part-1-row { flex-flow: column wrap; }
+  .about-text-1 {order: 2;}
+  .about-image-1 {order: 1;}
+  .card-title { font-size: 2rem !important; }
+  .button-en-savoir-plus h2 {font-size: 1rem !important}
+  .about-image-2 {padding-bottom: 3rem;}
+}
+
+

@@ -1,7 +1,7 @@
 /* OGÓLNE */
 
 html, body {
-  height: 100%;
+  height: 100;
   margin: 0;
   padding: 0;
   font-size: 16px !important;
@@ -38,8 +38,8 @@ h1 {
   padding: 0 !important;
 }
 
-.icon-mrcoffee-navbar {
-  height: 4rem;
+.navbar-div{
+  padding: 0.5rem 3rem !important;
 }
 
 .navbar-nav a {
@@ -49,14 +49,15 @@ h1 {
   padding-right: 2rem !important;
 }
 
-.pasek-nawigacyjny{
-  padding: 0.5rem 3rem !important;
+.icon-mrcoffee-navbar {
+  height: 4rem;
 }
 
 /* HEADER */
 
 header {
-  padding-top: 6rem;
+  margin-top: 6rem;
+  text-align: center;
 }
 
 .logo-header {
@@ -65,7 +66,7 @@ header {
 
 /* FOOTER */
 
-.pasek-dolny {
+.main-row-footer{
   height: 10rem;
   color: #ffffff;
   letter-spacing: 1px;
@@ -88,7 +89,7 @@ header {
   padding-left: 1rem;
 }
 
-.mar-x-footer {
+.margin-x-footer {
   margin-left: 20%;
 }
 
@@ -101,16 +102,13 @@ header {
 
 /*PHOTO CAFE PHILO*/
 
-.card-img-overlay {
-  display: flex !important;
-  justify-content: center;
-}
-
 .card-title {
   font-size: 3.5rem !important;
   font-weight: bold !important;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   margin-top: 5%;
+  color: white;
+  text-align: center;
 }
 
 /*TROIS CHOSES*/
@@ -150,11 +148,11 @@ header {
 /*PROGRAMME*/
 
 .notre-programme {
-  margin-right: 5%;
-  margin-left: 5%;
+  margin-right: 2%;
+  margin-left: 2%;
 }
 
-.notre-programme-info .row {
+.notre-programme .row {
   margin-bottom: 6rem;
 }
 
@@ -184,34 +182,127 @@ header {
 
 /* CONTACT PAGE*/
 
-.mapka {
-  width: 100%;
+.google-map {
   padding: 5% 15%;
 }
 
-.dane-kontaktowe {
+.contact-details {
   margin-left: 15%;
 }
 
-.dane-kontaktowe h3 {
-  padding-top: 3rem !important;
+/* FORM */
+
+.form {
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.form h3 {
+  margin-top: 2rem;
+}
+
+input {
+  height: 3rem;
+  width: 100%;
+  background-color: #bbc2ca;
+}
+
+textarea {
+  width: 100%;
+  height: 8rem;
+  padding: 1rem;
+  background-color: #bbc2ca;
+}
+
+::placeholder {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem !important;
+}
+
+.button-form, .button-modal {
+  height: 5rem;
+  background: #6a7b8b;
+  color: white;
+  font-size: 2rem;
+  font-weight: 800;
+  width: 30%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+}
+
+/* MODAL */
+
+.logo-modal {
+  height: 10rem;
+}
+
+.modal-container {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.my-modal {
+  background-color: white;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 5% 7%;;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  text-align: center;
+}
+
+.my-modal h3 {
+  padding: 3%;
+  text-align: start !important;
+  font-weight: 800;
+}
+
+.pad-right {
+  padding-right: 20%;
+}
+
+.pad-row-h3 {
+  padding-left: 13%;
+  padding-right: 15%;
 }
 
 /* MEDIA Q */
+@media all and (max-width: 1199px) {
+  input[type="submit"] { font-size: 1.5rem;}
+}
 
 @media all and (max-width: 991px) {
   .icon-open-row { flex-flow: column wrap; }
   .icon-open { width: 7rem; }
   .icon-open { padding: 1rem; }
+  .logo-modal { height: 5rem;}
 }
 
 @media all and (max-width: 767px) {
+  .card-title { font-size: 2rem !important; }
+  .en-savoir-plus h2 {font-size: 1rem !important}
   .about-part-1-row { flex-flow: column wrap; }
   .about-text-1 {order: 2;}
   .about-image-1 {order: 1;}
-  .card-title { font-size: 2rem !important; }
-  .button-en-savoir-plus h2 {font-size: 1rem !important}
   .about-image-2 {padding-bottom: 3rem;}
+  input[type="submit"] { font-size: 1rem;}
+  .button-modal { font-size: 1rem;}
 }
+
+@media all and (max-width: 575px) {
+  input[type="submit"] { font-size: 0.7rem;}
+  .button-modal { font-size: 0.7rem;}
+}
+
+
 
 
